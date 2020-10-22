@@ -25,15 +25,15 @@ class BurgerBuilder extends Component {
         error: false
     }
 
-    componentDidMount() {
-        axios.get("https://react-my-burger-59dc9.firebaseio.com/ingredients.json")
-            .then(res => {
-                this.setState({ ingredients: res.data })
-            })
-            .catch(error => {
-                this.setState({ error: true })
-            })
-    }
+    // componentDidMount() {
+    //     axios.get("https://react-my-burger-59dc9.firebaseio.com/ingredients.json")
+    //         .then(res => {
+    //             this.setState({ ingredients: res.data })
+    //         })
+    //         .catch(error => {
+    //             this.setState({ error: true })
+    //         })
+    // }
 
     updatePurchaseState = (ingredients) => {
         const sum = Object.keys(ingredients)
