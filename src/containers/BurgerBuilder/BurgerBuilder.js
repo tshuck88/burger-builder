@@ -58,8 +58,8 @@ class BurgerBuilder extends Component {
                 <Aux>
                     <Burger ingredients={this.props.ings} />
                     <BuildControls
-                        ingredientAdded={this.props.onIngredientAdded}
-                        ingredientRemoved={this.props.onIngredientRemoved}
+                        ingredientAdded={this.props.onIngredientAdded} // igName being passed in build controls component so no need to pass it here
+                        ingredientRemoved={this.props.onIngredientRemoved} // igName being passed in build controls component so no need to pass it here
                         disabled={disabledInfo}
                         purchasable={this.updatePurchaseState(this.props.ings)}
                         ordered={this.purchaseHandler}
