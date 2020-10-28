@@ -46,7 +46,7 @@ class Auth extends Component {
             });
         }
 
-        const from = formElementsArray.map(formElement => (
+        const form = formElementsArray.map(formElement => (
             <Input
                 key={formElement.id}
                 elementType={formElement.config.elementType}
